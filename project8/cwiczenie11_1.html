@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="cwiczenei11_1.css">
+  </head>
+    <body>
+
+<div id="kwadrat"></div>
+<button id="start">Start</button>
+<button id="reset">Reset</button>
+
+      <script>
+
+          const element = document.querySelector('#kwadrat');
+          const startButton = document.querySelector('#start');
+          const resetButton = document.querySelector('#reset');
+
+          startButton.addEventListener('click', () => {
+            let width = element.offsetWidth;
+            let height = element.offsetHeight;
+            let top = element.offsetTop;
+            let left = element.offsetLeft;
+
+            element.style.width = (width + 50) + 'px';
+            element.style.height = (height + 50) + 'px';
+            element.style.top = (top + 50) + 'px';
+            element.style.left = (left + 50) + 'px';
+          });
+
+          resetButton.addEventListener('click', () => {
+            element.style.width = '150px';
+            element.style.height = '150px';
+            element.style.top = '0px';
+            element.style.left = '0px';
+          });
+
+      </script>
+    </body>
+
+</html>

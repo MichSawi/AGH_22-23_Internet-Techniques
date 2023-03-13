@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="cwiczenie2_1.css">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+    var data = ['jeden', 'dwa', 'trzy', 'cztery']
+    var $list = $('<ul></ul>');
+    $('#root').append($list)
+    var items = [];
+    $.each(data, function(item,i) {
+      items.push('<li '+ 'id ="' + item + '">' + i + '</li>');
+    }); // close each()
+    $('ul').append(items.join(''));
+    $("#3").remove()
+    </script>
+
+  </body>
+</html>

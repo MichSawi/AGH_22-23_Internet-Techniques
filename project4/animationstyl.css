@@ -1,0 +1,44 @@
+body
+{
+    padding: 50px;
+	margin: 7em;
+}
+
+@keyframes kwadrat{
+	
+from{	
+	transform: skew(20deg);
+	}
+
+25%{
+
+	transform: skew(20deg, 20deg);
+	} 
+
+50% {
+
+	transform: skew(0deg,0deg);
+	}
+
+75% {
+	transform: skew(-20deg,-20deg);
+	}
+
+to {
+		transform: skew(0deg);
+	}
+}
+
+div
+ {
+		background:blue;
+		width:250px;
+		height:250px;
+		margin:50px;
+		float:left;
+		animation-name:kwadrat;
+		animation-iteration-count: infinite;
+		animation-direction:alternate;
+		animation-duration:3s;
+
+}

@@ -1,0 +1,138 @@
+body{
+	background-color:#800000
+}
+img{
+	width:300px;
+	height:300px;
+}
+
+div.container{
+	position:relative;
+	top:0;
+	left:0;
+}
+
+.szczesny{
+	position:absolute;
+	top:350px;
+	left:300px;
+	transform: rotate(-55deg);
+	opacity: 0.85;
+}
+
+.szczesny:hover{
+	position:absolute;
+	transform: rotate(0deg);
+	z-index: 1;
+	opacity: 1;
+	transfortm:scale(1.15);
+}
+
+.glik{
+	position:absolute;
+	top:350px;
+	left:500px;
+	opacity: 0.85;
+}
+
+.glik:hover{
+	position:absolute;
+	z-index: 1;
+	opacity: 1;
+	transfortm:scale(1.15);
+}
+
+.jedrzejczyk{
+	position:absolute;
+	top:300px;
+	left:650px;
+	transform: rotate(15deg);
+	opacity: 0.85;
+}
+
+.jedrzejczyk:hover{
+	position:absolute;
+	transform: rotate(0deg);
+	z-index: 1;
+	opacity: 1;
+	transfortm:scale(1.15);
+}
+
+.zielinski{
+	position:absolute;
+	top:150px;
+	left:900px;
+	transform: rotate(-15deg);
+	opacity: 0.85;
+}
+
+.zielinski:hover{
+	position:absolute;
+	transform: rotate(0deg);
+	z-index: 1;
+	opacity: 1;
+	transfortm:scale(1.15);
+}
+
+.milik{
+	position:absolute;
+	top:70px;
+	left:550px;
+	transform: rotate(74deg);
+	opacity: 0.85;
+}
+.milik:hover{
+	position:absolute;
+	transform: rotate(0deg);
+	z-index: 1;
+	opacity: 1;
+	transfortm:scale(1.15);
+}
+
+.krychowiak{
+	position:absolute;
+	top:300px;
+	left:965px;
+	transform: rotate(-40deg);
+	opacity: 0.85;
+}
+
+
+.krychowiak:hover{
+	position:absolute;
+	transform: rotate(0deg);
+	z-index: 1;
+	opacity: 1;
+	transfortm:scale(1.15);
+}
+
+.lewandowski{
+	position:absolute;
+	top:50px;
+	left:300px;
+	transform: rotate(-6deg);
+	opacity: 0.85;
+}
+
+.lewandowski:hover{
+	position:absolute;
+	transform: rotate(0deg);
+	z-index: 1;
+	opacity: 1;
+	transfortm:scale(1.15);
+}
+
+figure {
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+  position:relative;
+  z-index: 1;
+}

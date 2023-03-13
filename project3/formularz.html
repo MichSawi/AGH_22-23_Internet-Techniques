@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head> <link rel="stylesheet" href="formularzstyl.css">
+</head>
+<body>
+
+<fieldset> <legend> Kontrolki wielokrotnego wyboru </legend
+
+
+<form>
+<h1> Zaznacz dowolną ilość kratek
+</h1>
+<input type = "checkbox" name="option1" value="option1"> 
+Option 1
+<br>
+<input type = "checkbox" name="option2" value="option2"> 
+Option 2
+<br>
+<input type = "checkbox" name="option3" value="option3"> 
+Option 3
+<br> <br>
+<h1> Zaznacz dowolną ilość opcji z listy </h1>
+<select name="options" size = "4" multiple>
+<option value = "brak"> Brak </option>
+<option value = "Option 1"> Option 1 </option>
+<option value = "Option 2"> Option 2 </option>
+<option value = "Option 3"> Option 3 </option>
+</select>
+<br> 
+<p> Hold down the Ctrl to select multiple options </p>
+</form>
+</fieldset>
+
+<fieldset> <legend> Kontrolki jednokrotnego wyboru </legend>
+
+<form>
+<h1> Wybierz tylko jedną opcję </h1>
+<input type = "radio" name="option" value="option1" checked> 
+Option 1
+<br>
+<input type = "radio" name="option" value="option2"> 
+Option 2
+<br>
+<input type = "radio" name="option" value="option3"> 
+Option 3
+<br> <br>
+
+<h1> Wybierz jedną opcję z listy rozwijanej </h1>
+<select name="option">
+<option value = "brak"> Brak </option>
+<option value = "Option 1"> Option 1 </option>
+<option value = "Option 2"> Option 2 </option>
+<option value = "Option 3"> Option 3 </option>
+<option value = "Option 4"> Option 4 </option>
+</select>
+<br>
+</form>
+
+</fieldset>
+
+<fieldset> <legend> Pole tekstowe </legend>
+
+<form>
+<h1> Napisz opinię </h1>
+<textarea name="opinia" rows = "10" cols = "40"> 
+Napisz opinię w tym miejscu 
+</textarea>
+<br> <br>
+</form>
+
+</fieldset>
+<input type = "Submit">
+
+
+
+
+</body>
+</html>

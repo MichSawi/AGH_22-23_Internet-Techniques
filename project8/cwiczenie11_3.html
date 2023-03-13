@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="root">
+
+        </div>
+
+        <script>
+        $('#root').append('<button class="button1">Przycisk 1</button>')
+        $('#root').append('<div id="btn-group"></div>')
+        $('#btn-group').append('<button class="button2">Przycisk 2</button>')
+        $('#root').append('<button class="button3">Przycisk 3</button>')
+
+        $('#btn-group').append('<button class="button4">Menu 1</button>')
+        $('#btn-group').append('<button class="button5">Menu 2</button>')
+
+        $('.button2').click(function(){
+            $('.button4').slideToggle()
+            $('.button5').slideToggle()
+        })
+        </script>
+
+    </body>
+</html>
