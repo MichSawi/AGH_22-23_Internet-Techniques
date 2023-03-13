@@ -1,0 +1,620 @@
+body {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+#title {
+    font-weight: 500;
+    font-size: 90px;
+    margin-left: 0.5em;
+    margin-top: 0.3em;
+    color: #ae9b8d;
+    left: 0;
+    transition: left 0.5s ease-out;
+    position: absolute;
+    top: 10px;
+}
+
+#title.menu-open {
+    left: -5%;
+}
+
+.word1 {
+    animation: slide-in-left 0.5s forwards;
+    transition: transform 1.2s ease-out;
+    text-decoration: none;
+    color: #ae9b8d;
+    font-size: 90px;
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.menu-icon {
+    animation: slide-in-right 0.5s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.menu-icon div {
+    width: 140px;
+    height: 30px;
+    background-color: #2e393a;
+    margin: 10px 0;
+}
+
+.menu-icon span {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    font-weight: bold;
+    color: #ebebeb;
+}
+
+.menu {
+    animation: slide-in-right 0.5s ease-in-out;
+    width: 35%;
+    position: absolute;
+    background-color: #2e393a;
+    margin-left: 65%;
+    display: none;
+    text-align: center;
+    height: 550px;
+    top: 10px;
+    border-bottom-left-radius: 150px;
+}
+
+li a:hover {
+    color: #EB2F1E;
+    transition-duration: 0.3s;
+}
+
+.menu li, a {
+    list-style: none;
+    text-decoration: none;
+    color: #ebebeb;
+    margin: 30px 0;
+    font-size: 30px
+}
+
+.menu ul
+{
+    margin-top: 150px;
+}
+
+.image 
+{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 15%;
+    top: 37%;
+    border:3px solid #2e393a
+}
+
+h{
+    
+position: absolute;
+width: 519px;
+height: 294px;
+left: 920px;
+top: 499px;
+
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 128px;
+line-height: 128px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2E393A;
+}
+
+h1 {
+    position: absolute;
+    width: 519px;
+    height: 294px;
+    left: 440px;
+    top: 850px;
+
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 128px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #2E393A;
+    }
+
+.sound1_malysz_jp2 {
+    position:absolute;
+    width: 500px;
+    height: 100px;
+    left: 330px;
+    top:1000px;
+}
+
+
+
+.sound1 {
+    position:absolute;
+    width: 250px;
+    height: 100px;
+    left: 285px;
+    top:1000px;
+}
+
+.sound2 {
+    position:absolute;
+    width: 250px;
+    height: 100px;
+    left: 630px;
+    top:1000px;
+}
+
+div .description{
+    position: absolute;
+    width: 1500px;
+    height: 900px;
+    top: 1200px;
+}
+
+.description {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.9;
+    left: 10%;
+    
+    color: #2E393A;
+}
+
+div .quotes {
+    position: absolute;
+    width: 1277px;
+    height: 348px;
+    left: 15%;
+    top: 2100px;
+}
+
+
+.quotes{
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 52px;
+line-height: 52px;
+text-align: center;
+color: #2E393A;
+}
+
+
+div .title {
+    position: absolute;
+    width: 1277px;
+    height: 348px;
+    left: 15%;
+    top: 2000px;
+}
+
+
+.title {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 62px;
+    line-height: 32px;
+    text-align: center;
+    color: #2E393A;
+}
+
+.gallery {
+    position: absolute;
+    width: 1277px;
+    height: 348px;
+    left: 200px;
+    top: 2900px;
+}
+
+.photo1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width:250px;
+    height: 250px;
+    border: 45px solid #AE9B8D;
+    border-radius: 80px;
+}
+
+.photo2 {
+    position: absolute;
+    top: 0px;
+    left: 400px;
+    width:250px;
+    height: 250px;
+    border: 45px solid #AE9B8D;
+    border-radius: 80px;
+}
+
+.photo3 {
+    position: absolute;
+    top: 0px;
+    left: 800px;
+    width:250px;
+    height: 250px;
+    border: 45px solid #AE9B8D;
+    border-radius: 80px;
+}
+
+.photo4 {
+    position: absolute;
+    top: 0px;
+    left: 1200px;
+    width:250px;
+    height: 250px;
+    border: 45px solid #AE9B8D;
+    border-radius: 80px;
+}
+
+.rectanglebig {
+position: absolute;
+width: 1282px;
+height: 1338px;
+left: 325px;
+top: 3400px;
+background: #EB2F1E;
+border-radius: 46px;    
+box-shadow: 5px 5px 10px black;
+}
+
+.rectangle_left_1{
+position: absolute;
+width: 635px;
+height: 231px;
+top:250px;
+left:50px;
+
+background: #2E393A;
+border-radius: 40px;
+}
+
+.rectangle_right_1
+{
+position: absolute;
+width: 726px;
+height: 231px;
+top:250px;
+left:500px;
+
+background: #AE9B8D;
+border-radius: 40px;
+}
+
+.rectangle_left_2{
+    position: absolute;
+    width: 635px;
+    height: 231px;
+    top:575px;
+    left:50px;
+    
+    background: #2E393A;
+    border-radius: 40px;
+    }
+    
+    .rectangle_right_2
+    {
+    position: absolute;
+    width: 726px;
+    height: 231px;
+    top:575px;
+    left:500px;
+    
+    background: #AE9B8D;
+    border-radius: 40px;
+    }
+
+    .rectangle_left_3{
+        position: absolute;
+        width: 635px;
+        height: 231px;
+        top:900px;
+        left:50px;
+        
+        background: #2E393A;
+        border-radius: 40px;
+        }
+        
+        .rectangle_right_3
+        {
+        position: absolute;
+        width: 726px;
+        height: 231px;
+        top:900px;
+        left:500px;
+        
+        background: #AE9B8D;
+        border-radius: 40px;
+    }
+    
+    .quiz {
+        position: absolute;
+        width: 388px;
+        height: 130px;
+        left: -13px;
+        top: 7px;
+
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 148px;
+        line-height: 128px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    .q_head {
+        position: absolute;
+        width: 291px;
+        height: 59px;
+        left: 15px;
+        top: 0px;
+
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+
+        color: #AE9B8D;
+    }
+
+    .a_head {
+        position: absolute;
+        width: 291px;
+        height: 59px;
+        left: 500px;
+        top: 0px;
+
+
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+
+        color: #2E393A;
+    }
+
+
+    .q1 {
+        position: absolute;
+        width: 591px;
+        height: 136px;
+        top: 50px;
+        left: 30px;
+
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+    
+
+
+    ul {
+
+        position: absolute;
+        left: 150px;
+    }
+     
+    .l1 {
+        position: absolute;
+        top:30px;
+        width: 700px;
+
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    .l2 {
+        position: absolute;
+        top:90px;
+        width: 700px;
+
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+
+    .l3 {
+        position: absolute;
+        top:150px;
+        width: 700px;
+    
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+
+
+    .label_right {
+        left: 300px;
+        cursor:pointer;
+        margin-left: 20px;
+    }
+
+    #button_modal{
+        width:40px;
+        height:30px;
+    }
+    .modal {
+        display: none;
+        position: absolute;
+        top: 800px;
+        left: 350px;
+        width: 60px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        width:600px;
+        height: 300px;
+        background-color: #ebebeb;
+        border-radius:5px;
+        border: 2px solid #2E393A;    
+    }
+
+    p {
+        font-size:42px;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 700;
+        align-items: center;
+        text-align: center;
+    }
+
+    .modal-active{
+        display:flex;
+    }
+
+    .close-modal{
+        position:absolute;
+        top: 10px;
+        right: 30px;
+    }
+
+    .answer {
+        cursor: pointer;
+    }
+    
+
+    .correct {
+        color: forestgreen;
+    }
+
+    .in-correct{
+        color: red;
+    }
+
+.submit{
+    top: 1200px;
+    left: 32%;
+
+    position: absolute;
+    width: 450px;
+    height: 125px;
+
+    background: #2E393A;
+    border-radius: 40px;
+    position: absolute;
+
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 128px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.submit:hover {
+    background:green;
+}
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> fff2b2d1ed8f61112a0ae6523fa8895a7d9eb743
+h2 {
+    color: #ae9b8d;
+    position: relative;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    border-top: 3px solid #ae9b8d;
+    ;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+h2 span {
+    background: #ebebeb;
+    padding: 0 10px;
+}
+
+.footer {
+    position: relative;
+    top: 5000px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <title>Najlepsi Polacy</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header>
+
+        <div id="title">
+            <div class="word1">Najlepsi</div>
+            <div class="word2">Polacy</div>
+        </div>
+
+        <img src="../img/header_husaria.png" class="header_husaria">
+
+        <div class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <span>MENU</span>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="pudzian.html">Mariusz Pudzianowski</a></li>
+                <li><a href="jp2.html">Jan Paweł II</a></li>
+                <li><a href="malysz.html">Adam Małysz</a></li>
+                <li><a href="personality.html">Test osobowości - sprawdź się!</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="persons">
+        <a href="pudzian.html" id="person">
+            <div id="number-box">
+                <div id="nr">NR</div>
+                <div id="number">1</div>
+                <div id="info">KLIKNIJ,<br>aby dowiedzieć się<br>więcej o w tej postaci!</div>
+            </div>
+            <div id="name">MARIUSZ<br>PUDZIANOWSKI</div>
+            <img src="../img/pudzian.png" class="pers-photo">
+        </a>
+        <a href="jp2.html" id="person">
+            <div id="number-box">
+                <div id="nr">NR</div>
+                <div id="number">2</div>
+                <div id="info">KLIKNIJ,<br>aby dowiedzieć się<br>więcej o w tej postaci!</div>
+            </div>
+            <div id="name">JAN PAWEŁ<br>II</div>
+            <img src="../img/papiez.png" class="pers-photo">
+        </a>
+        <a href="malysz.html" id="person">
+            <div id="number-box">
+                <div id="nr">NR</div>
+                <div id="number">3</div>
+                <div id="info">KLIKNIJ,<br>aby dowiedzieć się<br>więcej o w tej postaci!</div>
+            </div>
+            <div id="name">ADAM<br>MAŁYSZ</div>
+            <img src="../img/malysz.png" class="pers-photo">
+        </a>
+    </div>
+
+    <footer>
+        <h2><span>SUBIEKTYWNY RANKING NAJLEPSZYCH POLAKÓW © WSZELKIE PRAWA ZASTRZEŻONE</span></h2>
+    </footer>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const menuIconDivs = document.querySelectorAll('.menu-icon div');
+        const menuIconSpan = document.querySelector('.menu-icon span');
+        const menu = document.querySelector('.menu');
+        menu.style.display = 'none';
+
+        menuIcon.addEventListener('click', () => {
+            if (menu.style.display === 'none') {
+                menu.style.display = 'block';
+                menuIconSpan.style.color = '#2e393a';
+                for (const div of menuIconDivs) {
+                    div.style.background = '#FFFEFF';
+                }
+                document.querySelector('.header_husaria').classList.add('menu-open');
+                document.querySelector('#title').classList.add('menu-open');
+            } else {
+                menu.style.display = 'none';
+                menuIconSpan.style.color = '#FFFEFF';
+                for (const div of menuIconDivs) {
+                    div.style.background = '#2e393a';
+                }
+                document.querySelector('.header_husaria').classList.remove('menu-open');
+                document.querySelector('#title').classList.remove('menu-open');
+            }
+        });
+
+    </script>
+</body>
+
+<!--
+#EBEBEB
+#AE9B8D
+#2E393A
+#EB2F1E
+#FFFEFF
+-->
+
+</html>
